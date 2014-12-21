@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ClickTool - Tools for clicktale QA and developers</title>
+    <meta name="description" content="ClickTool">
+    <meta name="author" content="Maayan">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/keyboard.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+<div class="creditsIcon">
+    <img src="http://png-3.findicons.com/files/icons/1261/sticker_system/128/get_info.png" height="40" width="40" alt="" onclick="aboutClick()" />
+</div>
+
+<h1>&nbsp&nbsp<img  height="30"  width="30" src="pics/CT_logoShape48t.png" /><span class="logoText">Click<span class="heavy">Tool</span></span></h1>
+
+<table>
+<div class="toAdd">
+    To add a CTBM tool bookmark to your browser please do as follow:
+</div>
+    <br/><br/>
+    <tr>
+        <td>
+            <u>In chrome browser:</u></br>
+            <lI class="li1">Enter <a href="chrome://bookmarks/" target="_blank">Chrome bookmarks</a></lI>
+            <li class="li1">Right click on screen -> "Add page..."</li>
+            <li class="li1">At the name section write CTBM Tool</li>
+            <li class="li1">At the URL section paste the code below</li>
+        </td>
+        <td>
+            <u>In FF browser:</u></br>
+            <lI class="li1">Press Ctr+D at FF page</lI>
+            <li class="li1">Click on edit</li>
+            <li class="li1">At the name section write CTBM Tool</li>
+            <li class="li1">At the URL section paste the code below</li>
+        </td>
+    </tr>
+</table>
+
+<textarea rows="6" cols="85" >
+javascript:(function(){var%20scr=document.createElement('script');scr.id='ctbm_script';scr.src='https://cs3.clicktale.dom:666/JS/CTBM.js';scr.type='text/javascript';document.body.appendChild(scr);})();
+</textarea>
+
+<br/><br/>
+<a href="index.html"><input class="backBtn" align="left" type="button" value="Back"></a>
+<img class="clickTaleLogo" align="right" height="45"  width="150" hspace="32" vspace="-25" src="pics/Logo_Purple_Trans_Tagline.png"/>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+<!-- main menu -->
+<table>
+    <tr>
+        <td>
+            <a href="ChangeIP.html">
+                <input class="mainBtn" type="button" value="ChangeIP" id="ChangeIP" />
+            </a>
+        </td>
+        <td>&nbsp&nbsp Use this tool to Switch IPs for your computer</td>
+    </tr>
+
+    <tr>
+    <td><input class="mainBtn" type="button" value="Capturer" id="Capturer"
+               onclick="openExternalItem(EXTERNAL.CAPTURER)"/></td>
+    <td>&nbsp&nbsp Use this tool to Capture a record and add built it into an XML file</td>
+    </tr>
+    <tr>
+        <td><input class="mainBtn" type="button" value="Pusher" id="Pusher" onclick="openExternalItem(EXTERNAL.PUSHER)" /></td>
+        <td>&nbsp&nbsp Use this tool to Push a record to an account on your local computer</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="bookmarks.html">
+                <input class="mainBtn" type="button" value="Bookmarks" id="Bookmarks" />
+            </a>
+        </td>
+        <td>&nbsp&nbsp Use this tool to Add important CT tools to your browser</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="AutomationMenu.html">
+                <input class="mainBtn" type="button" value="Automations" id="Auto" />
+            </a>
+        </td>
+        <td>&nbsp&nbsp Use this tool enable a browser Plug-in with CT record details</td>
+    </tr>
+</table>
+<br/><br/>
+
+<!-- imri's game -->
+<section id="toggleMe" style="visibility: hidden">
+    <ul></ul>
+    <p>
+        Score: <span id="score">0</span> Imri knockouts!
+    </p>
+    <p class="score">
+        Level: <span id="level">1</span>
+    </p>
+</section>

@@ -1,0 +1,15 @@
+{
+  "name": "hello",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "icon": "pics/CT_logoShape96t.png",
+    "width": 610,
+    "height": 397,
+    "scrollbars": false,
+    "resizable": false
+  },
+  "dependencies" : {
+    "hostile" : "1.0.0"
+  }
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ClickTool - Tools for clicktale QA and developers</title>
+    <meta name="description" content="ClickTool">
+    <meta name="author" content="Maayan">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/keyboard.js"></script>
+    <script src="js/progressbar.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+<div class="creditsIcon">
+    <img src="http://png-3.findicons.com/files/icons/1261/sticker_system/128/get_info.png" height="40" width="40" alt="" onclick="aboutClick()" />
+</div>
+
+
+<h1>&nbsp&nbsp<img  height="30"  width="30" src="pics/CT_logoShape48t.png" style="border:0;" /><span class="logoText">Click<span class="heavy">Tool</span></span></h1>
+
+
+<table>
+    <tr>
+        <td>&nbsp&nbsp
+            <input class="mainBtn3" type="button" value="localhost" id="localhost" data-ipaddress="127.0.0.1"  onclick="changeIP(IPMap.Localhost)" onload="getHost()"/>
+        </td>
+        <td>&nbsp Localhost</td>
+        <td>
+            <input class="mainBtn3" type="button" value="qa-coreservices" id="coreservices" data-ipaddress="192.168.186.13" onclick="changeIP(IPMap.CoreServices)" onload="getHost()"/>
+        </td>
+        <td>&nbsp Core :: Jonathan's team <br> &nbsp 192.168.186.13</td>
+    </tr>
+    <tr>
+        <td>&nbsp&nbsp
+            <input class="mainBtn3" type="button" value="qa-releasebox" id="releasebox" data-ipaddress="192.168.186.14" onclick="changeIP(IPMap.ReleaseBox)" onload="getHost()"/>
+        </td>
+        <td>&nbsp Lions :: Yevgeny's team <br> &nbsp 192.168.186.14</td>
+        <td>
+            <input class="mainBtn3" type="button" value="qa-recorderbox" id="recorderbox" data-ipaddress="192.168.186.204" onclick="changeIP(IPMap.RecorderBox)" onload="getHost()"/>
+        </td>
+        <td>&nbsp Recorder :: Sagi's team <br> &nbsp 192.168.186.204</td>
+    </tr>
+    <tr>
+        <td>&nbsp&nbsp
+            <input class="mainBtn3" type="button" value="qa-auto2" id="auto2" data-ipaddress="192.168.186.246" onclick="changeIP(IPMap.Auto2)" onload="getHost()"/>
+        </td>
+        <td>&nbsp Main <br> &nbsp 192.168.186.246</td>
+        <td>
+            <input class="mainBtn3" type="button" value="qa-branch1" id="branch1" data-ipaddress="192.168.186.247" onclick="changeIP(IPMap.Branch1)" onload="getHost()"/>
+        <td>&nbsp Jaguars :: Yaniv's team <br> &nbsp 192.168.186.247</td>
+    </tr>
+    <tr>
+        <td>&nbsp&nbsp
+            <input class="mainBtn3" type="button" value="qa-prever" id="prever" data-ipaddress="192.168.186.210" onclick="changeIP(IPMap.Prever)" onload="getHost()"/>
+        </td>
+        <td>&nbsp Previous version <br> &nbsp 192.168.186.210</td>
+        <td>
+            <input class="mainBtn3" type="button" value="qa-redesign" id="redesign" data-ipaddress="0.0.0.0" onclick="changeIP(IPMap.Redesign)" onload="getHost()"/>
+        </td>
+        <td>&nbsp Lions :: Yevgeny's team
+    </tr>
+</table>
+
+<br>
+
+<div class="config">
+    * Your current configuration is <span id="ipHolder" onload="getHost()"></span>
+</div>
+
+<a href="index.html"><input class="backBtn" align="left" type="button" value="Back"></a>
+<img class="clickTaleLogo" align="right" height="45"  width="150" hspace="32" vspace="-25" src="pics/Logo_Purple_Trans_Tagline.png"/>
+
+</body>
+</html>
